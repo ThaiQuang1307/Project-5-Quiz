@@ -20,7 +20,6 @@ function Register() {
     };
 
     const checkExist = await users.getUser(email);
-    console.log(checkExist);
 
     if (checkExist.length > 0) {
       alert("Tài khoản đã tồn tại!");
